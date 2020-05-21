@@ -1,0 +1,108 @@
+/*======= GLOBAL STYLES ===========*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url(fonts/montserrat-medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url(fonts/montserrat-regular.ttf);
+}@font-face {
+    font-family: 'Grand Hotel';
+    src: url(fonts/grandhotel-regular.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.5rem + 1vw);
+  --header1: calc(2rem + 1vw);
+  --light: #d4b2c3;
+  --medium: #813d55;
+  --dark: #152c0d;
+  --white: white;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: ;
+  font-size: var(--text);
+  color: var(--dark);
+}
+
+img {
+  width: 100%;
+}
+
+a:link, a:visited {
+  color: var(--white);
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:hover, a:focus, a:link:active, a:visited:active {
+  color: var(--light);
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*======= TYPOGRAPHY ===========*/
+h1 {
+  font-size: var(--header1);
+  font-family: 'Grand Hotel', sans-serif;
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4 {
+  font-size: var(--header4);
+}
+
+
+
+
+/*======= NAVIGATION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= FOOTER  ===========*/
+footer {
+  margin-top: auto;
+}
+
+/*======= MEDIA QUERY ===========*/
+@media (min-width:700px) {
+  /*======= ================= ===========*/
+  /*======= ================== ===========*/
+}
+
+@media (min-width:1000px) {
+  /*======= ================= ===========*/
+  /*======= ================== ===========*/
+}

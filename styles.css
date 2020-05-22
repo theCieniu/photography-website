@@ -6,15 +6,18 @@
 }
 
 @font-face {
-    font-family: 'Montserrat Medium';
-    src: url(fonts/montserrat-medium.ttf);
+  font-family: 'Montserrat Medium';
+  src: url(fonts/montserrat-medium.ttf);
 }
+
 @font-face {
-    font-family: 'Montserrat Regular';
-    src: url(fonts/montserrat-regular.ttf);
-}@font-face {
-    font-family: 'Grand Hotel';
-    src: url(fonts/grandhotel-regular.ttf);
+  font-family: 'Montserrat Regular';
+  src: url(fonts/montserrat-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Grand Hotel';
+  src: url(fonts/grandhotel-regular.ttf);
 }
 
 html {
@@ -23,7 +26,7 @@ html {
   --header2: calc(3.5rem + 1vw);
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
-  --text: calc(1.5rem + 1vw);
+  --text: calc(1.1rem + 1vw);
   --header1: calc(2rem + 1vw);
   --light: #d4b2c3;
   --medium: #813d55;
@@ -32,21 +35,20 @@ html {
 }
 
 body {
-  width: 100vw;
-  overflow-x: hidden;
   font-family: ;
   font-size: var(--text);
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--white);
 }
 
+/*
 img {
   width: 100%;
 }
-
+*/
 a:link, a:visited {
   color: var(--white);
   text-decoration: none;
-  cursor: auto;
 }
 
 a:hover, a:focus, a:link:active, a:visited:active {
@@ -57,17 +59,20 @@ ul {
   list-style: none;
 }
 
-.flex {
+.flex-col, .flex-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 /*======= TYPOGRAPHY ===========*/
 h1 {
   font-size: var(--header1);
   font-family: 'Grand Hotel', sans-serif;
+  font-weight: lighter;
 }
 
 h2 {
@@ -82,11 +87,86 @@ h4 {
   font-size: var(--header4);
 }
 
-
-
-
 /*======= NAVIGATION ===========*/
-/*======= SECTION ===========*/
+nav {
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav img {
+  height: calc(var(--header1) + 2vh);
+  margin: 0.25em 0.5em 0;
+}
+
+nav ul {
+  justify-content: space-around;
+}
+
+nav li {
+  padding-left: 1em;
+}
+
+/*======= HERO SECTION ===========*/
+.hero {
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.hero-text {
+  text-align: center;
+  justify-content: center;
+  flex: 1 1 40rem;
+  padding: 10vw;
+  z-index: 5;
+}
+
+.hero h2 {
+  color: var(--light);
+}
+
+.hero p {
+  margin: 2em 0 3em;
+  text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.9);
+  z-index: 6;
+  position: relative;
+}
+
+a.button {
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 0.5em 2em;
+  margin: 1em;
+  border-radius: 1em;
+}
+
+a.button:hover {
+  background: var(--white);
+}
+
+.hero-imgs {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+#lampart {
+  width: 100%;
+}
+
+#plant1 {
+  position: absolute;
+  bottom: -5rem;
+  left: -25rem;
+  z-index: 3;
+  width: 70%;
+}
+
+#plant2 {
+  position: absolute;
+  bottom: -10rem;
+  right: -10rem;
+}
+
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/

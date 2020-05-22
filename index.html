@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="img/favicon.ico" type="image/ico">
+  <link rel="icon" href="img/iona-joy-logo-dark.png" type="image/ico">
   <meta name="author" content="Paulina Weiher">
   <meta name="keywords" content="paulina weiher front-end web developer project portfolio">
   <meta name="description" content="Front-end project with html, css and javascript for web developer portfolio by Paulina Weiher">
@@ -16,19 +16,40 @@
 
 <body>
 
-  <header>
-    <nav>
-<h1>Iona Joy | Nature Photograper</h1>
-      <ol>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ol>
+  <header class="main-header">
+    <nav class="flex-row">
+      <a href="#" id="logo" class="flex-row">
+        <div>
+          <img src="img/iona-joy-logo-white.png" alt="iona joy photography logo">
+        </div>
+        <h1>Iona Joy | Nature Photograper</h1>
+      </a>
+      <ul class="nav-links flex-row">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
+    <section class="hero flex-row">
+      <div class="hero-text flex-column">
+        <h2>Iona Joy<br>Photography</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="gallery" title="view photography gallery" class="button">View Gallery</a>
+      </div>
+      <div class="hero-imgs">
+        <img src="img/lampart.jpg" alt="lampart" id="lampart">
+        <img src="img/plant1.png" alt="" id="plant1">
+        <img src="img/plant2.png" alt="" id="plant2">
+      </div>
+
+    </section>
+
+
+
+
   </main>
 
   <footer>

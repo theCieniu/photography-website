@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: 'Medium';
-  src: url(fonts/montserrat-medium.ttf);
+  src: url('fonts/montserrat-medium.ttf');
 }
 
 @font-face {
   font-family: 'Regular';
-  src: url(fonts/montserrat-regular.ttf);
+  src: url('fonts/montserrat-regular.ttf');
 }
 
 @font-face {
   font-family: 'Fancy';
-  src: url(fonts/greatvibes-regular.ttf);
+  src: url('fonts/greatvibes-regular.ttf');
 }
 
 html {

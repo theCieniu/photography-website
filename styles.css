@@ -6,18 +6,18 @@
 }
 
 @font-face {
-  font-family: 'Montserrat Medium';
+  font-family: 'Medium';
   src: url(fonts/montserrat-medium.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'Regular';
   src: url(fonts/montserrat-regular.ttf);
 }
 
 @font-face {
-  font-family: 'Grand Hotel';
-  src: url(fonts/grandhotel-regular.ttf);
+  font-family: 'Fancy';
+  src: url(fonts/greatvibes-regular.ttf);
 }
 
 html {
@@ -26,16 +26,16 @@ html {
   --header2: calc(3.5rem + 1vw);
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
-  --text: calc(1.1rem + 1vw);
+  --text: calc(1rem + 1vw);
   --header1: calc(2rem + 1vw);
-  --light: #d4b2c3;
-  --medium: #813d55;
-  --dark: #152c0d;
-  --white: white;
+  --light: #ffcdd2;
+  --medium: #613942;
+  --dark: #071b1c;
+  --white: #fffff5;
 }
 
 body {
-  font-family: ;
+  font-family: 'Regular', sans-serif;
   font-size: var(--text);
   background-color: var(--dark);
   color: var(--white);
@@ -49,6 +49,7 @@ img {
 a:link, a:visited {
   color: var(--white);
   text-decoration: none;
+  transition: color 0.5s ease-in-out;
 }
 
 a:hover, a:focus, a:link:active, a:visited:active {
@@ -68,11 +69,26 @@ ul {
   flex-direction: column;
 }
 
+main {
+  animation: opening 1s ease-in-out;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
 /*======= TYPOGRAPHY ===========*/
 h1 {
   font-size: var(--header1);
-  font-family: 'Grand Hotel', sans-serif;
+  font-family: 'Fancy', sans-serif;
   font-weight: lighter;
+  margin: 1rem auto;
 }
 
 h2 {
@@ -88,23 +104,27 @@ h4 {
 }
 
 /*======= NAVIGATION ===========*/
+#logo {
+  justify-content: center;
+}
+
 nav {
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
 }
 
-nav img {
+/*nav img {
   height: calc(var(--header1) + 2vh);
   margin: 0.25em 0.5em 0;
-}
-
+}*/
 nav ul {
   justify-content: space-around;
 }
 
 nav li {
-  padding-left: 1em;
+  padding-left: 1.6em;
 }
 
 /*======= HERO SECTION ===========*/
@@ -133,15 +153,17 @@ nav li {
 }
 
 a.button {
-  background-color: var(--light);
-  color: var(--dark);
+  color: var(--white);
   padding: 0.5em 2em;
   margin: 1em;
-  border-radius: 1em;
+  border-radius: 2em;
+  border: solid 0.1em var(--white);
+  transition: all 0.5s ease-in-out;
 }
 
 a.button:hover {
-  background: var(--white);
+  border: solid 0.1em var(--light);
+  color: var(--light);
 }
 
 .hero-imgs {
@@ -155,16 +177,57 @@ a.button:hover {
 
 #plant1 {
   position: absolute;
-  bottom: -5rem;
-  left: -25rem;
+  bottom: -5vw;
+  left: -15vw;
   z-index: 3;
-  width: 70%;
+  max-width: 70%;
+  animation: intro1 3s ease-in-out,
+    plant1 7s ease-in-out 3.5s infinite alternate;
+}
+
+@keyframes intro1 {
+  0% {
+    transform: translate(15vw, 3vw) rotate(15deg);
+  }
+
+  100% {}
+}
+
+@keyframes plant1 {
+  0% {}
+
+  100% {
+    transform: translate(3vw, -2vw) rotate(-5deg) skew(-10deg, 5deg) scale(1.05);
+  }
 }
 
 #plant2 {
   position: absolute;
-  bottom: -10rem;
-  right: -10rem;
+  bottom: -3vw;
+  right: -1vw;
+  max-width: 70%;
+  animation: intro2 2s ease-out,
+    plant2 5s ease-in-out 2.5s infinite alternate;
+}
+
+@keyframes intro2 {
+  0% {
+    transform: translate(-15vw, 3vw) rotate(-30deg);
+  }
+
+  100% {}
+}
+
+@keyframes plant2 {
+  0% {}
+
+  100% {
+    transform: translate(1vw, 1vw) rotate(6deg) skew(3deg, -5deg) scale(0.95);
+  }
+}
+
+.plant {
+  max-width: 100vw;
 }
 
 /*======= SECTION ===========*/
@@ -174,15 +237,24 @@ a.button:hover {
 /*======= FOOTER  ===========*/
 footer {
   margin-top: auto;
+  text-align: center;
 }
 
 /*======= MEDIA QUERY ===========*/
-@media (min-width:700px) {
+@media (max-width:1000px) {
+
   /*======= ================= ===========*/
+  #plant1 {
+    left: -20vw;
+  }
+
   /*======= ================== ===========*/
 }
 
-@media (min-width:1000px) {
+@media (max-width:700px) {
+
   /*======= ================= ===========*/
-  /*======= ================== ===========*/
-}
+  #plant1 {
+    left: -35vw;
+    /*======= ================== ===========*/
+  }

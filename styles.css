@@ -6,17 +6,17 @@
 }
 
 @font-face {
-  font-family: 'Medium';
+  font-family: Montserrat;
   src: url('../fonts/montserrat-medium.ttf');
 }
 
 @font-face {
-  font-family: 'Regular';
+  font-family: Regular;
   src: url('../fonts/montserrat-regular.ttf');
 }
 
 @font-face {
-  font-family: 'Fancy';
+  font-family: Fancy;
   src: url('../fonts/greatvibes-regular.ttf');
 }
 

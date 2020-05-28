@@ -36,6 +36,7 @@
   </header>
 
   <main>
+
     <section class="hero flex-row">
       <div class="hero-text flex-column">
         <h2>Iona Joy<br>Photography</h2>
@@ -77,7 +78,6 @@
         <p>I look in the eye of Nature</p>
       </header>
       <div class="gallery-section">
-
         <img src="img/gallery-1.jpg" alt="lynx by the river" id="gallery1">
         <img src="img/gallery-2.jpg" alt="tiger" id="gallery2">
         <img src="img/gallery-3.jpg" alt="lioness drinking" id="gallery3">
@@ -85,12 +85,36 @@
       </div>
     </section>
 
+    <section id="contact" class="flex-col">
+      <div class="contact-text flex-row">
+        <h2>Get in<br><span>touch</span></h2>
+        <form class="flex-col" action="index.html" method="post">
+          <input type="text" name="email" value="" id="email" placeholder="your@email.com" required>
+          <button type="submit" name="button" class="button">Send!</button>
+        </form>
+      </div>
+      <div class="contact-img flex-row">
+        <img src="img/contact-page.png" alt="lampart laying on a tree trunk">
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    Created by <a href="https://github.com/theCieniu" target="_blank">Paulina Weiher @theCieniu</a>
+  <footer class="flex-row">
+    <p>Created by <a href="https://github.com/theCieniu" target="_blank">Paulina Weiher @theCieniu</a> &copy;
+    </p>
+    <ul class="flex-row">
+      <li><a href="https://github.com/theCieniu" target="_blank" title="github profile @theCieniu">
+          <i class="fab fa-github"></i>
+        </a></li>
+      <li><a href="https://twitter.com/theCieniu" target="_blank" title="twitter profile @theCieniu">
+          <i class="fab fa-twitter"></i>
+        </a></li>
+      <li><a href="https://www.instagram.com/thecieniu/" target="_blank" title="instagram profile @theCieniu">
+          <i class="fab fa-instagram"></i>
+        </a></li>
+    </ul>
   </footer>
-
 
   <script src="script.js"></script>
 </body>

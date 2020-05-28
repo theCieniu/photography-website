@@ -32,6 +32,7 @@ html {
   --dark: #071b1c;
   --white: #ffffff;
   --accent: #9ccc65;
+  scroll-behavior: smooth;
 }
 
 body {
